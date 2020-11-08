@@ -1,0 +1,28 @@
+<header>
+    <!--redes sociales-->
+<nav id="redes-sociales">
+  <a href="https://twitter.com/soyfode" target="_blank" class="fab fa-twitter"></a>
+  <a href="https://www.researchgate.net/profile/Christian_Paredes_Aguilera" target="_blank" class="fab fa-researchgate"></a>
+  <a href="https://github.com/soyFode" target="_blank" class="fab fa-github"></a>
+  <a href="https://soundcloud.com/1fode1" target="_blank" class="fab fa-soundcloud"></a>
+  <a href="https://www.facebook.com/soyfode" target="_blank" class="fab fa-facebook"></a>
+  <a href="https://www.instagram.com/soyfode" target="_blank" class="fab fa-instagram"></a>
+</nav>
+
+  <div id="menu">
+    <ul>
+      <li><a id="logo" [routerLink]="['/about']" [routerLinkActive]="['actived']">Soy Fode</a></li>
+      <li> <a [routerLink]="['/matematicas']" [routerLinkActive]="['actived']">Matemáticas</a> </li>
+      <li> <a [routerLink]="['/mundo']" [routerLinkActive]="['actived']">Mundo</a> </li>
+      <li> <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a> </li>
+    </ul>
+</div>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  Soy Fode &copy;
+</footer>
